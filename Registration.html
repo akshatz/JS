@@ -10,20 +10,20 @@
 </head>
 <body>
     <div class="center">
-        
         <h1>To Do app Registration Page</h1>
-            <script src="JS Files/register.js"></script>
-            <form action="." method="GET" name="login">
-                Email Address <input type="email" name="email"placeholder="Enter your email" id="email" onsubmit="return checkforblank.ValidateEmail()"><br /><br />
-                Username <input type="text"name="username" placeholder="Enter your username" id="uname" onsubmit="return checkforblank.validation_username()"><br /><br/>
-                Password <input type="password" name="password" placeholder="Enter your password" id="pass" onsubmit="return checkforblank.validation_password()"><br /><br/>
-                First Name <input type="text" placeholder="Enter first name" name="fname"  id="fname" onsubmit="return checkforblank.fname_validate()"><br/><br/>
-                Last Name <input type="text" placeholder="Enter last name" name="lname" id="lname" onsubmit="return checkforblank.lname_validate()"><br/><br />
-                Gender <input type="radio" name="gender" id="radio"> Male
-                <input type="radio" name="gender" id="radio"> Female
-                <input type="radio" name="gender" id="radio"> Others<br /><br />
-                Address <textarea placeholder="Enter address" name="address"rows="5" cols="20" id="address" onsubmit="return checkforblank.address_validate() "word-break:" break-word"></textarea><br /><br />
-                <button type="submit" value="" onclick="return checkforblank()">Submit</button>
+        <script src="JS Files/register.js"></script>
+        <form action="." method="post" name="login" onsubmit="return check_for_blank()">
+            Email Address <input type="email" name="email"placeholder="Enter your email" id="email" onsubmit="return ValidateEmail()"><br /><br />
+            Username <input type="text"name="username" placeholder="Enter your username" id="uname" onsubmit="return validation_username()"><br /><br/>
+            Password <input type="password" name="password" placeholder="Enter your password" id="pass" onsubmit="return validation_password()"><br /><br/>
+            First Name <input type="text" placeholder="Enter first name" name="fname"  id="fname" onsubmit="return fname_validate()"><br/><br/>
+            Last Name <input type="text" placeholder="Enter last name" name="lname" id="lname" onsubmit="return lname_validate()"><br/><br />
+            Gender <input type="radio" name="gender" id="radio"> Male
+            <input type="radio" name="gender" id="radio"> Female
+            <input type="radio" name="gender" id="radio"> Other<br /><br />
+            Address <textarea placeholder="Enter address" name="address"rows="5" cols="20" id="address" onsubmit="return addressValidate()"></textarea><br /><br />
+            <button type="submit" onclick="OnSubmit() ">Registration</button>
+        
      </form>
     </div>
 
