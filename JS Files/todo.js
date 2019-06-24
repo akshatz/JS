@@ -57,8 +57,8 @@ function newElement() {
 //local storage
 if (typeof(Storage) !== "undefined") {
     // Store
-    // localStorage.setItem("username", uname.value);
-    // localStorage.setItem("password", pwd.value);
+    localStorage.setItem("username", uname.value);
+    localStorage.setItem("password", pwd.value);
     localStorage.setItem(ul, li);
     // Retrieve
     document.getElementById("result").innerHTML = localStorage.getItem("lastname");
