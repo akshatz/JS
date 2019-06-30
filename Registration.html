@@ -3,28 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/stylesheet.css" type="text/css">
     <link rel="stylesheet" href="CSS/normalize.css" type="text/css"/>
     <link rel="stylesheet" href="CSS/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="CSS/stylesheet.css" type="text/css">
     <title>Registration</title>
 </head>
 <body>
     <div class="center">
         <h1>To Do app Registration Page</h1>
-        <script src="JS Files/register.js"></script>
-        <form action="." method="post" name="login" onsubmit="return check_for_blank()">
-            Email Address <input type="email" name="email"placeholder="Enter your email" id="email" onsubmit="return ValidateEmail()"><br /><br />
-            Username <input type="text"name="username" placeholder="Enter your username" id="uname" onsubmit="return validation_username()"><br /><br/>
-            Password <input type="password" name="password" placeholder="Enter your password" id="pass" onsubmit="return validation_password()"><br /><br/>
-            First Name <input type="text" placeholder="Enter first name" name="fname"  id="fname" onsubmit="return fname_validate()"><br/><br/>
-            Last Name <input type="text" placeholder="Enter last name" name="lname" id="lname" onsubmit="return lname_validate()"><br/><br />
-            Gender <input type="radio" name="gender" id="radio"> Male
-            <input type="radio" name="gender" id="radio"> Female
-            <input type="radio" name="gender" id="radio"> Other<br /><br />
-            Address <textarea placeholder="Enter address" name="address"rows="5" cols="20" id="address" onsubmit="return addressValidate()"></textarea><br /><br />
-            <button type="submit" onclick="OnSubmit() ">Registration</button>
-        
-     </form>
+            <script src="JS Files/register.js"></script>
+            <form method="POST" name="login">
+                Username <input type="text"name="username" placeholder="Enter your username" id="uname"><br /><br/>
+                Password <input type="password" name="password" placeholder="Enter your password" id="pass"><br /><br/>
+                First Name <input type="text" placeholder="Enter first name" name="fname"  id="fname"><br/><br/>
+                Last Name <input type="text" placeholder="Enter last name" name="lname" id="lname"><br/><br />
+                Gender <input type="radio" name="gender" id="radio"> Male
+                <input type="radio" name="gender" id="radio"> Female<br /><br />
+                Address <textarea placeholder="Enter address" name="address" rows="5" cols="20" id="address" ></textarea><br /><br />
+                <!-- Insert Image <button type="button" >Choose profile picture </button><br /> <br /> -->
+                <input type="button" value="Registration" onclick=registration()> 
+            </form>
     </div>
 
 </body>

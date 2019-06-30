@@ -1,2 +1,1 @@
-# JS
-JS Assignment
+Assignment
